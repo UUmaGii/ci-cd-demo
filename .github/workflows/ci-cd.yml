@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+# 添加这两行
+permissions:
+  contents: write
+
 jobs:
   # 第一个 job：运行测试（CI）
   test:
